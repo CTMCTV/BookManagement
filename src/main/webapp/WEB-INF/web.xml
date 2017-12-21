@@ -1,0 +1,53 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+
+  <servlet>
+    <servlet-name>addServlet</servlet-name>
+    <servlet-class>cn.ctmctv.servlet.AddServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>getList</servlet-name>
+    <servlet-class>cn.ctmctv.servlet.QueryServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>deleteServlet</servlet-name>
+    <servlet-class>cn.ctmctv.servlet.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>updateServlet</servlet-name>
+    <servlet-class>cn.ctmctv.servlet.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>updateDateServlet</servlet-name>
+    <servlet-class>cn.ctmctv.servlet.UpdateDateServlet</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>addServlet</servlet-name>
+    <url-pattern>/add.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>getList</servlet-name>
+    <url-pattern>/getList.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>deleteServlet</servlet-name>
+    <url-pattern>/delete.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updateServlet</servlet-name>
+    <url-pattern>/update.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updateDateServlet</servlet-name>
+    <url-pattern>/updateData.do</url-pattern>
+  </servlet-mapping>
+</web-app>
